@@ -1,0 +1,75 @@
+<!--<p id="notice"><%= notice %></p>-->
+
+<!--<p>-->
+  <!--<strong>Name:</strong>-->
+  <!--<%= @product.name %>-->
+<!--</p>-->
+
+<!--<p>-->
+  <!--<strong>Gender:</strong>-->
+  <!--<%= @product.gender %>-->
+<!--</p>-->
+
+<!--<p>-->
+  <!--<strong>Price:</strong>-->
+  <!--<%= @product.price %>-->
+<!--</p>-->
+
+<!--<p>-->
+  <!--<strong>Filters:</strong>-->
+  <!--<%= @product.filters %>-->
+<!--</p>-->
+
+<!--<p>-->
+  <!--<strong>Image url:</strong>-->
+  <!--<%= @product.image_url %>-->
+<!--</p>-->
+
+<!--<%= button_to 'Add to Cart', :controller => :cart, :action => :add, :id => @product.id %>-->
+<!--<%= link_to 'Edit', edit_product_path(@product) %> | -->
+<!--<%= link_to 'Back', products_path %>-->
+
+<!--<div></div>-->
+
+
+<div class="row rowdiv">
+
+  <div class="col-md-7 leftside">
+    <%= image_tag (@product.image_url.to_s().split(", ")[0]), :class => "image2" %>
+    <!--<p> adfuasehfefn</p>-->
+  </div>
+
+  <div class="col-md-5 rightside">
+
+    <div class="prodname"><%= @product.name%> </div>
+
+    <div class="picdesc">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+        Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum."</p>
+    </div>
+
+    <div class="prodname price"><%= number_to_currency @product.price, :unit => 'Price: ' %></div>
+
+    <div class="bb">
+      <%= link_to 'Add to Cart', {:controller => :cart, :action => :add, :id => @product.id}, :class=> 'backbutton' %>
+    </div>
+
+    <div class="back">
+      <%= link_to '< Keep buying', products_path, :class=>'keepbuy' %>
+    </div>
+
+  </div>
+
+</div>
+
+
+

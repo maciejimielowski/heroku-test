@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+
+<!--<h1>Products</h1>-->
+<!--<h2> <%= link_to 'My Cart', :controller => :cart, :action => :index %></h2> -->
+
+
+<% @products.each do |product| %>
+
+    <div class="gallery1">
+
+      <img class="image"> <%= image_tag product.image_url.to_s().split(", ")[0] %>
+
+      <div class ="desc1">
+        <%= product.name %>
+        <p class="text"><%= link_to 'Take a look!', product, :class=>'text' %> </p>
+      </div>
+
+    </div>
+
+<% end %>
+
+<div class="clearfix"></div>
+
+
+<%= link_to 'New Product', new_product_path %>
+
+
+
+

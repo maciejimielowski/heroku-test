@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+
+body {
+  background-image: url("listki.jpg");
+  font-family: 'Raleway', sans-serif;
+}
+.container {
+  background-color: white;
+}
+
+.container1 {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.mainnav {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.left{
+  display: block;
+  float:left;
+  font-family: 'Playball', cursive;
+  font-size: 40px;
+}
+
+.right{
+  display: block;
+  float:right;
+  width: auto;
+  font-size:20px;
+  font-weight: bold;
+  //border: 2px solid salmon;
+  //border-radius: 20px;
+
+  margin-top: 10px;
+}
+
+.mainnav a {
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mainnav a:hover{
+  background-color: white;
+  color: black;
+}

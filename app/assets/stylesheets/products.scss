@@ -1,0 +1,116 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//
+
+//---------index css styling --------------
+
+div.gallery1 {
+  margin: 1%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 18%;
+
+}
+
+div.gallery1 img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc1 {
+  padding: 15px;
+  text-align: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text {
+  margin-top: 10px;
+}
+
+.text:hover {
+  background-color: white !important;
+  text-decoration: none !important;
+  color: #fd4953 !important;
+}
+
+//-----------Show css styling---------------
+
+.leftside {
+ #border: 1px solid lightgray;
+
+}
+
+.rightside {
+  border: 1px solid lightgray;
+  height: 500px;
+
+}
+
+.image2 {
+  width: 80%;
+  #border: 1px solid red;
+  margin-left: 10%;
+}
+
+.rowdiv {
+  padding: 30px;
+  heigh: 600px;
+}
+.prodname {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.bb {
+  #border: 2px solid pink;
+  width: 80%;
+  margin-left: 10%;
+  height: 50px;
+  color: white;
+  display: table;
+
+}
+.backbutton {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fd4953;
+  color:white !important;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.backbutton:hover {
+  background-color: #fd4953 !important;
+  color: antiquewhite !important;
+  text-decoration: none !important;
+}
+.picdesc {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.price {
+  display: block;
+  float: right;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.back {
+  margin-top: 35px;
+}
+
+.keepbuy:hover {
+  background-color: white !important;
+  text-decoration: none !important;
+}
